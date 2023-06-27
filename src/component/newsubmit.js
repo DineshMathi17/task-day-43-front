@@ -20,7 +20,7 @@ export function Reset() {
     let { id, token } = useParams();
     const restdata = async ({ newpassword }) => {
         try {
-            const response = await fetch(`http://localhost:7000/reset/${id}/${token}`, {
+            const response = await fetch(`https://task-day-43-back.onrender.com/reset/${id}/${token}`, {
                 method: "POST",
                 body: JSON.stringify(newpassword),
                 headers: {
