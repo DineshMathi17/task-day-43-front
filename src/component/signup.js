@@ -24,7 +24,7 @@ export function Signup() {
   const sign = async ({ newuser }) => {
     console.log(newuser);
     try {
-      const response = await fetch("http://localhost:7000/signup", {
+      const response = await fetch("https://task-day-43-back.onrender.com/signup", {
         method: "POST",
         body: JSON.stringify(newuser),
         headers: {
